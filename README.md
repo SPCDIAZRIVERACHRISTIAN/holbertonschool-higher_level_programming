@@ -1,0 +1,1 @@
+In this repository we worked with high level programming languages like python javascript and html
