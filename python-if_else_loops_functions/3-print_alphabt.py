@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 for i in range(97, 123):
-    if i != ord('q') and i != ord('e'):
-        print(chr(i), end='')
+    if chr(i) != 'q' and chr(i) != 'e':
+        print('{}'.format(chr(i)), end='')
