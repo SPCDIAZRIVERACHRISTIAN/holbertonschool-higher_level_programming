@@ -1,0 +1,1 @@
+This directory will be focused on tasks that helps you understand conditions and loops in python
