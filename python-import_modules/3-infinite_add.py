@@ -7,5 +7,6 @@ def add_it():
 
     print(total)
 
+
 if __name__ == '__main__':
     add_it()
