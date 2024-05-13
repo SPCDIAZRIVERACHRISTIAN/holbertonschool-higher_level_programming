@@ -1,0 +1,1 @@
+this repository we will be working on data structures in python mainly with lists and tuples
