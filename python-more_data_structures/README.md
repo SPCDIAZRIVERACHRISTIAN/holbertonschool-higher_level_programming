@@ -1,0 +1,1 @@
+In this directory we worked with more data structures and functions like lambda map and others
