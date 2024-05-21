@@ -1,0 +1,29 @@
+========================
+how to use 3-say_my_name
+========================
+
+This module takes a string with another and concatenates it to a sentence
+
+Usage
+=====
+
+``say_my_name(...)`` print firs and last name as string in a sentence.
+
+::
+
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+    >>> say_my_name("John", "Wick")
+    My name is John Wick
+
+::
+
+    >>> say_my_name(404, "SILVA")
+    Traceback (most recent call last):
+    TypeError: first_name must be a string
+
+::
+
+    >>>say_my_name('andrew', 404)
+    Traceback (most recent call last):
+    TypeError: last_name must be a string
+
