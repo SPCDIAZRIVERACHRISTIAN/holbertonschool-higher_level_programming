@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-"""This is a class that defines a rectangle"""
+"""Defines a rectangle"""
 
 
 class Rectangle:
-    """This class defines a rectangle with width and height"""
+    """Represents a triangle"""
 
     def __init__(self, width=0, height=0):
         """initializes a new rectangle
@@ -49,9 +49,11 @@ class Rectangle:
             self.__height = value
 
     def area(self):
+        """Return the area of the Rectangle."""
         return self.__width * self.__height
 
     def perimeter(self):
+        """Return the perimeter of the Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__height + self.__width)
