@@ -1,0 +1,10 @@
+"""
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+test 0:
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> print(bg)
+ValueError [ValueError] invalid value for my_int
+"""
