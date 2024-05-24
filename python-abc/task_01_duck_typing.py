@@ -13,7 +13,9 @@ class Shape(ABC):
 
 
 class Circle(Shape):
-    def __init__(self, radius=0):
+    def __init__(self, radius):
+        if radius <= 0:
+            raise ValueError("Radius must be positive")
         self.radius = radius
 
     def area(self):
@@ -25,6 +27,8 @@ class Circle(Shape):
 
 class Rectangle(Shape):
     def __init__(self, width=0, height=0):
+        if width <=0 or length <=0:
+            raise ValueError("Width and height must be positive")
         self.width = width
         self.height = height
 
@@ -36,5 +40,12 @@ class Rectangle(Shape):
 
 
 def shape_info(Shape):
-    print(f"Area:", Shape.area())
-    print(f"Perimeter:",Shape.perimeter())
+    try:
+        print(f"Area:", Shape.area())
+        print(f"Perimeter:",Shape.perimeter())
+    except AttributeError as e:
+        print(f"Error: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
+    
+    
