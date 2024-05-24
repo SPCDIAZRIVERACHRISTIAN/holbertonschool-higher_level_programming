@@ -40,10 +40,5 @@ class Rectangle(Shape):
 
 
 def shape_info(Shape):
-    try:
         print(f"Area:", Shape.area())
         print(f"Perimeter:",Shape.perimeter())
-    except AttributeError as e:
-        print(f"Error: {e}")
-    except Exception as e:
-        print(f"Error: {e}")
