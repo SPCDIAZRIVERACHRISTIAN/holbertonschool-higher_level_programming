@@ -26,7 +26,7 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
-    def __init__(self, width=0, height=0):
+    def __init__(self, width, height):
         if width <=0 or length <=0:
             raise ValueError("Width and height must be positive")
         self.width = width
@@ -47,5 +47,3 @@ def shape_info(Shape):
         print(f"Error: {e}")
     except Exception as e:
         print(f"Error: {e}")
-    
-    
