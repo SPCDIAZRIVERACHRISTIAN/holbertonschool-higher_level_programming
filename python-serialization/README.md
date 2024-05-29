@@ -1,0 +1,1 @@
+This directory was made to work with python different types of serialization and deserialization
