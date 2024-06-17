@@ -1,1 +1,2 @@
---This is a comment
+--This script shows databases in sql
+SHOW databases
