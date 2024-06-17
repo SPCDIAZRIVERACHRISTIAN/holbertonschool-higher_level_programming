@@ -1,2 +1,2 @@
---This script shows databases in sql
+-- This script shows databases in sql
 SHOW databases;
