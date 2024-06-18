@@ -1,4 +1,5 @@
--- This is a script that lists all records of the table second_table
--- This script lists all records of the table second_table,
--- showing the score for each record regardless of the name being NULL or an empty string.
-SELECT score, name FROM second_table ORDER BY score DESC;
+-- This script is used to select the score and name of all the students in the second_table table who have a name that is not NULL, ordered by score in descending order.
+SELECT score, name
+FROM second_table
+WHERE name IS NOT NULL
+ORDER BY score DESC
