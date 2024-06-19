@@ -15,7 +15,7 @@ def list_all_states(mysql_username, mysql_password, mysql_db):
     db = MySQLdb.connect(host="localhost", port=3306, user=mysql_username,
                          passwd=mysql_password, db=mysql_db)
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
     states = cursor.fetchall()
     for state in states:
         print(state)
