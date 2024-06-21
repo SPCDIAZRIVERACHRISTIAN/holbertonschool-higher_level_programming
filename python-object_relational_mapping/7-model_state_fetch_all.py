@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-'''Creates a session that inputs data to a table
-    Script fetches all the states
+'''This script fetches all the states from
+the database and prints their IDs and names.
 '''
 import sys
 from sqlalchemy.orm import Session
@@ -14,7 +14,7 @@ if __name__ == "__main__":
                            pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
-    session = Session(engine) #sessions is what opens the session to input information
+    session = Session(engine)
     for state in session.query(State).order_by(State.id).all():
         print("{}: {}".format(state.id, state.name))
 session.close()
