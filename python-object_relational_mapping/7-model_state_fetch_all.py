@@ -9,6 +9,9 @@ from model_state import Base, State
 
 
 if __name__ == "__main__":
+    '''This script fetches all the states from
+    the database and prints their IDs and names.
+    '''
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'
                            .format(sys.argv[1], sys.argv[2], sys.argv[3]),
                            pool_pre_ping=True)
