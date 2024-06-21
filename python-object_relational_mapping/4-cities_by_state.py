@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''''''
+'''this script pairs cities with states and prints them'''
 import MySQLdb
 import sys
 
