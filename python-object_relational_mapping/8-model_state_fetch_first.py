@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-''''''
+'''This script prints the first state in table states'''
 
 import sys
 from sqlalchemy.orm import Session
