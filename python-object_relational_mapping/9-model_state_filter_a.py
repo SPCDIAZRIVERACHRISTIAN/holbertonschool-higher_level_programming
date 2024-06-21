@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-''''''
+'''This script prints all states that has a letter a'''
 
 import sys
 from sqlalchemy.orm import Session
